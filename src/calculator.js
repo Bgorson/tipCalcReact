@@ -69,6 +69,7 @@ export default class TipCalculator extends Component {
     render() { 
         return (  
         <div className= "container">
+            <h1 className= "header">Calculate your Tip and Bill Here</h1>
             <form onSubmit= {this.handleSubmit}>
          <label>
            Bill
@@ -90,7 +91,7 @@ export default class TipCalculator extends Component {
            <input onChange = {this.handleChange} type="number" name="amountSplit" value = {this.state.amountSplit}  />
          </label>
          <br></br>
-         <input className= "btn btn-success" type="submit" value="Submit" />
+         <input className= "btn btn-success" type="submit" value="Calculate" />
        </form>
        <div>
            <p>Tip per person: $ {this.state.tipAmount}</p>

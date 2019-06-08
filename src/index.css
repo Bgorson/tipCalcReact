@@ -1,6 +1,21 @@
-.container {
-  margin:auto;
-}
 .tip {
   margin:20px;;
+}
+html {
+  background-color:lightcyan;
+}
+.container {
+  border:1px black solid;
+  background-color:lightcyan;
+  position: absolute;
+top:50%;
+left:50%;
+margin:auto;
+padding:auto;
+-ms-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+}
+.header {
+  margin-bottom:2vh;
 }
