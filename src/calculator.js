@@ -46,13 +46,15 @@ export default class TipCalculator extends Component {
                 bill:1
             })
         }
-
-        
+        if (peopleToSplit <=0){
+            peopleToSplit=1;
+        }
+        console.log(peopleToSplit)      
        
         console.log(state.bill)
         console.log(state.tipPercentage)
         let totalBill= (state.bill * (state.tipPercentage/100))+parseFloat(state.bill)
-        totalBill= totalBill/state.amountSplit
+        totalBill= totalBill/peopleToSplit
         
         this.setState ({
             total:totalBill.toFixed(2),
